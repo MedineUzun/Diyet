@@ -1,11 +1,13 @@
 const express = require('express');
 const path = require('path');
+const helmet = require('helmet')
 const bodyParser = require('body-parser');
 const app = express();
 const port = 3000;
 
 require('./mongo');
 
+app.use(helmet())
 app.use(bodyParser.urlencoded({ extended: true }));
 app.use(bodyParser.json());
 app.use(express.static(path.join(__dirname, '../client')));
