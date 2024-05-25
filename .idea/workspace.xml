@@ -5,8 +5,13 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="91b96590-858a-461f-8866-ce26c3968f23" name="Changes" comment="">
-      <change afterPath="$PROJECT_DIR$/DockerFile" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/nutrion.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/profilgor.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/client/tarifekle.html" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/nutrion.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/nutrionSchema.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/profilgor.js" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/server/tarifler.js" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -46,7 +51,7 @@
   "keyToString": {
     "RunOnceActivity.ShowReadmeOnStart": "true",
     "dart.analysis.tool.window.visible": "false",
-    "git-widget-placeholder": "Security",
+    "git-widget-placeholder": "Merging Security",
     "kotlin-language-version-configured": "true",
     "show.migrate.to.gradle.popup": "false"
   }
