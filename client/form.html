@@ -1,0 +1,89 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üyelik Formu</title>
+    <link rel="stylesheet" href="styles.css">
+    <style>
+        body {
+            background-color: #f4f4f4;
+            margin-left: 40%;
+            margin-top: 50px;
+        }
+        input {
+            font-size: 15px;
+            height: 30px;
+            border: 0;
+            border-radius: 10px;
+            width:300px;
+        }
+
+        #radio input{
+            width:15px;
+            padding-left:20px;
+        }
+
+        button {
+            border: none;
+            border-radius: 5px;
+            cursor: pointer;
+            margin-top: 25px;
+            margin-left: 100px;
+            width: 150px;
+            background-color: #b85ca3;
+            color:white;
+            height:30px;
+        }
+
+        button:hover{
+            background-color:cornflowerblue;
+        }
+
+        label, h1 {
+            color :#b85ca3 ;
+            font-family:Cambria;
+        }
+
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Üyelik Formu</h1>
+    </header>
+    <main>
+        <form action="/uyeol" method="POST">
+            <label for="firstName">Ad:</label>
+            <br /><br />
+            <input type="text" id="firstName" name="firstName" required>
+            <br /><br />
+            <label for="lastName">Soyad:</label>
+            <br /><br />
+            <input type="text" id="lastName" name="lastName" required>
+            <br /><br />
+            <label for="phone">Telefon No:</label>
+            <br /><br />
+            <input type="text" id="phone" name="phone" required>
+            <br /><br />
+            <label for="email">Mail:</label>
+            <br /><br />
+            <input type="email" id="email" name="email" required>
+            <br /><br />
+            <label for="password">Şifre:</label>
+            <br /><br />
+            <input type="password" id="password" name="password" required>
+            <br /><br />
+            <label for="isDietitian">Diyetisyen misiniz?</label>
+            <div class="radio-group" id="radio">
+                <input type="radio" id="yes" name="isDietitian" value="yes" class="radio">
+                <label for="yes">Evet</label>
+                <input type="radio" id="no" name="isDietitian" value="no" class="radio">
+                <label for="no">Hayır</label>
+            </div>
+
+            <button type="submit">Kaydet</button>
+        </form>
+    </main>
+</body>
+</html>
+
