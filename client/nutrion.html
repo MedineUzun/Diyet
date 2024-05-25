@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Nutrition List</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            padding: 20px;
+        }
+        .nutrition-item {
+            padding: 10px;
+            border: 1px solid #ccc;
+            margin-bottom: 10px;
+        }
+    </style>
+</head>
+<body>
+    <h1>Nutrition List</h1>
+    <div id="nutritionList"></div>
+
+    <script>
+        document.addEventListener("DOMContentLoaded", () => {
+            fetch('/nutrition')
+                .then(response => {
+                    if (!response.ok) {
+                        throw new Error(`HTTP error! status: ${response.status}`);
+                    }
+                    return response.json();
+                })
+                .then(data => {
+                    console.log('Fetched data:', data);
+
+                    const nutritionList = document.getElementById('nutritionList');
+                    nutritionList.innerHTML = '';
+
+                    data.forEach(item => {
+                        const itemDiv = document.createElement('div');
+                        itemDiv.className = 'nutrition-item';
+                        itemDiv.innerHTML = `
+                            <p><strong>Breakfast:</strong> ${item.breakfast}</p>
+                            <p><strong>Snacks:</strong> ${item.snacks}</p>
+                            <p><strong>Lunch:</strong> ${item.lunch}</p>
+                            <p><strong>Dinner:</strong> ${item.dinner}</p>
+                            <p><strong>Midnight Snack:</strong> ${item.midnightSnack}</p>
+                            <p><strong>Beverages:</strong> ${item.beverages}</p>
+                            <p><strong>Max Protein:</strong> ${item.maxProtein}</p>
+                            <p><strong>Max Carbs:</strong> ${item.maxCarbs}</p>
+                            <p><strong>Max Fat:</strong> ${item.maxFat}</p>
+                            <p><strong>Max Calories:</strong> ${item.maxCalories}</p>
+                        `;
+                        nutritionList.appendChild(itemDiv);
+                    });
+                })
+                .catch(error => console.error('Error fetching nutrition data:', error));
+        });
+    </script>
+</body>
+</html>
