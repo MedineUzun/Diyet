@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <meta charset="utf-8" />
+    <title>Randevu Ekranı</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <h1>RANDEVUNUZU OLUŞTURUNUZ</h1>
+    <form action="/randevu-al" method="post" style="margin-top:200px">
+        <table>
+            <tr>
+                <td>Diyetisyen Seçiniz:</td>
+                <td>
+                    <select name="diyetisyen">
+                        <option value="Saliha">Saliha Ünersoy</option>
+                        <option value="Kevser">Kevser Ünlü</option>
+                        <option value="Umut">Umut Yiğit</option>
+                        <option value="Betül">Betül Savaş</option>
+                        <option value="Medine">Medine Uzun</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td>Tarih Seçiniz:</td>
+                <td><input type="date" name="tarih" /></td>
+            </tr>
+            <tr>
+                <td>Saat Seçiniz:</td>
+                <td>
+                    <select name="saat">
+                        <option value="13.00">13.00</option>
+                        <option value="14.00">14.00</option>
+                        <option value="15.00">15.00</option>
+                        <option value="16.00">16.00</option>
+                        <option value="16.15">16.15</option>
+                        <option value="16.45">16.45</option>
+                    </select>
+                </td>
+            </tr>
+            <tr>
+                <td><button type="submit">Randevu Al</button></td>
+               
+            </tr>
+        </table>
+    </form>
+</body>
+</html>

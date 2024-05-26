@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Üyelik Formu</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body>
+    <header>
+        <h1>Üyelik Formu</h1>
+    </header>
+    <main>
+        <form action="/uyeol" method="POST">
+            <label for="firstName">Ad:</label>
+            <input type="text" id="firstName" name="firstName" required>
+            
+            <label for="lastName">Soyad:</label>
+            <input type="text" id="lastName" name="lastName" required>
+            
+            <label for="phone">Telefon No:</label>
+            <input type="text" id="phone" name="phone" required>
+            
+            <label for="email">Mail:</label>
+            <input type="email" id="email" name="email" required>
+            
+            <label for="password">Şifre:</label>
+            <input type="password" id="password" name="password" required>
+            
+            <label for="isDietitian">Diyetisyen misiniz?</label>
+            <div class="radio-group">
+                <input type="radio" id="yes" name="isDietitian" value="yes">
+                <label for="yes">Evet</label>
+                <input type="radio" id="no" name="isDietitian" value="no">
+                <label for="no">Hayır</label>
+            </div>
+            
+            <button type="submit">Kaydet</button>
+        </form>
+    </main>
+</body>
+</html>

@@ -1,0 +1,49 @@
+﻿<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Beslenme Planı Oluştur</title>
+    <link rel="stylesheet" type="text/css" href="./styles.css">
+</head>
+<body>
+    <header>
+        <h1>Beslenme Planı Oluştur</h1>
+    </header>
+    <main>
+        <form action="/beslenmeolustur" method="POST">
+            <label for="breakfast">Kahvaltı:</label>
+            <input type="text" id="breakfast" name="breakfast" required>
+
+            <label for="snacks">Ara Öğünler:</label>
+            <input type="text" id="snacks" name="snacks" required>
+
+            <label for="lunch">Öğle Yemeği:</label>
+            <input type="text" id="lunch" name="lunch" required>
+
+            <label for="dinner">Akşam Yemeği:</label>
+            <input type="text" id="dinner" name="dinner" required>
+
+            <label for="midnightSnack">Gece Atıştırmalığı:</label>
+            <input type="text" id="midnightSnack" name="midnightSnack" required>
+
+            <label for="beverages">İçecekler:</label>
+            <input type="text" id="beverages" name="beverages" required>
+
+            <label for="maxProtein">Maksimum Protein:</label>
+            <input type="number" id="maxProtein" name="maxProtein" required>
+
+            <label for="maxCarbs">Maksimum Karbonhidrat:</label>
+            <input type="number" id="maxCarbs" name="maxCarbs" required>
+
+            <label for="maxFat">Maksimum Yağ:</label>
+            <input type="number" id="maxFat" name="maxFat" required>
+
+            <label for="maxCalories">Maksimum Kalori:</label>
+            <input type="number" id="maxCalories" name="maxCalories" required>
+
+            <button type="submit">Kaydet</button>
+        </form>
+    </main>
+</body>
+</html>
