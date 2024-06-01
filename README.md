@@ -1,6 +1,6 @@
 # Diyet Web Projesi
 
-Bu proje 2023-2024 eğitim öğretim yılı 'Web Programlama Dersi' dersi için hazırlanmıştır.
+Bu proje 2023-2024 eğitim öğretim yılı 'Web Programlama' dersi için hazırlanmıştır.
 
 
 # Sisteme Giriş
