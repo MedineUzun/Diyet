@@ -17,5 +17,5 @@ Linkin içerisindeki server klasörünün içerisinde docker mevcuttur.
 210201044 Kevser Ünlü   <br/>
 210201101 Saliha Ünersoy  <br/>
 210201051 Betül Savaş  <br/>
-210201013 Medine Uzun.
+210201013 Medine Uzun
 
