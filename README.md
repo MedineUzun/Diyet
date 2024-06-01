@@ -1,6 +1,21 @@
-Online Diyetisyenlik Hizmeti:<br/>
-Kayıt olma işleminden sonra danışanların ve diyetisyenlerin verileri tutulur. Şifre ve kimlik numarası ile sisteme rollere dayalı erişim gerçekleştirilir. Danışanlar sistem üzerinden diyetisyenlerini seçebilir.  
-Diyetisyenler kişiye özel diyet programları hazırlar. Danışanlar kendi sekmelerinde programlarını görebilirler. Yemek tarifleri sekmesi bulunur. Diyetisyenler tarif ekleyebilir.
+# Diyet Web Projesi
 
-Kullanım:<br/>
-WebSitesi açıldıktan sonra diyetisyen ve danışan rolleri ile sisteme kayıt olunur ve gerekli bilgiler MongoDB içerisine kayıt edilir. Ardından sisteme giriş yapan kullanıcı giriş yaptığı role göre sistem içerisinde gerekli yerlere erişebilmektedir.
+Bu proje 2023-2024 eğitim öğretim yılı 'Web Programlama Dersi' dersi için hazırlanmıştır.
+
+
+# Sisteme Giriş
+
+Online bir diyet sitesi yaptık. Diyetisyen ve danışan olmak üzere iki ayrı rolü bulunuyor. <br/><br/>Diyetisyen için; <br/>**05414792611** telefon numarası ve **123** şifresi ile giriş yapabilirsiniz. <br/><br/>Danışan için;<br/> **05556663355** telefon numarası ve **123456** şifresi ile giriş yapabilirsiniz. <br/>. 
+
+## DockerFile
+
+Linkin içerisindeki server klasörünün içerisinde docker mevcuttur.
+
+## Ekip Üyeleri
+
+200201041 Umut Yiğit <br/>
+210201044 Kevser Ünlü   <br/>
+210201101 Saliha Ünersoy  <br/>
+210201051 Betül Savaş  <br/>
+210201013 Medine Uzun.
+
